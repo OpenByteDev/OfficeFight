@@ -1,0 +1,23 @@
+﻿<Window x:Class="Control"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OfficeFight"
+        mc:Ignorable="d"
+        Height="74.51" Width="602.451" Background="{x:Null}" WindowStyle="None" ResizeMode="NoResize" Topmost="True" AllowsTransparency="True" Icon="Icon.ico" Title="OfficeFight">
+    <Grid x:Name="Root" Margin="2">
+        <Grid x:Name="Stats" Margin="10">
+            <Grid x:Name="Player1Stats" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="{Binding ElementName=Player1Stats, Path=ActualHeight}" Background="{DynamicResource Firefox}" />
+            <Grid x:Name="Player2Stats" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="{Binding ElementName=Player2Stats, Path=ActualHeight}" Background="{DynamicResource Firefox}" />
+            <Grid.Resources>
+                <ImageBrush x:Key="Firefox" ImageSource="Resources/firefox.png"/>
+                <ImageBrush x:Key="Chrome" ImageSource="Resources/chrome.png"/>
+                <ImageBrush x:Key="Opera" ImageSource="Resources/opera.png"/>
+                <ImageBrush x:Key="Safari" ImageSource="Resources/safari.png"/>
+                <ImageBrush x:Key="IE" ImageSource="Resources/ie.png"/>
+            </Grid.Resources>
+        </Grid>
+        <Image x:Name="CloseBtn" HorizontalAlignment="Right" VerticalAlignment="Top"  Width="15" Height="15" Source="Resources/close.png"/>
+    </Grid>
+</Window>

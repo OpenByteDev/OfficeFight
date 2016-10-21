@@ -1,0 +1,17 @@
+﻿<Window x:Class="Player"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OfficeFight"
+        mc:Ignorable="d"
+        Title="Player" Height="100" Width="100" ResizeMode="NoResize" AllowsTransparency="True" WindowStyle="None" Topmost="True" ShowInTaskbar="False">
+    <Window.Resources>
+        <ImageBrush x:Key="Word" ImageSource="Resources/word.png"/>
+        <ImageBrush x:Key="PowerPoint" ImageSource="Resources/powerpoint.png"/>
+        <ImageBrush x:Key="Publisher" ImageSource="Resources/publisher.png"/>
+        <ImageBrush x:Key="Access" ImageSource="Resources/access.png"/>
+        <ImageBrush x:Key="Outlook" ImageSource="Resources/outlook.png"/>
+        <ImageBrush x:Key="OneNote" ImageSource="Resources/onenote.png"/>
+    </Window.Resources>
+</Window>
